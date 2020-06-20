@@ -20,7 +20,8 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
-
+var myVar = "I like to code";
+console.log(myVar);
 /* Challenge #2
  * Create variables for your first and last name then print your full name
  *
@@ -33,7 +34,9 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
-
+var firstName ="Ismael";
+var lastName = " Boro";
+console.log(firstName+lastName);
 /* Challenge #3
  * Calculate the total price rounded to two decimals
  *
@@ -47,6 +50,10 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+var price = 9.98;
+let quantity = 5;
+let total = parseFloat(price) * parseFloat( quantity);
+console.log(`$${total.toFixed(2)}`);
 
 /* Challenge #4
  * Declare a variable and conditionally assign it a value
@@ -63,7 +70,15 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
-
+var weather = "Rainy";
+var message;
+if(weather==="Sunny"){
+   message = " Yay! It's sunny outside";
+}else{
+    message = "Aww! It's not sunny outside";
+}
+ message = "Aww! It's not sunny outside";
+console.log(message);
 /* Challenge #5
  * Create a function that returns any string
  *
@@ -76,7 +91,11 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
-
+function myFunction (){
+    var answer = "Life is good and we should be happy.";
+    return answer;
+}
+console.log(myFunction());
 /* Challenge #6
  * Rewrite the function in Challenge #5 as an arrow function
  *
@@ -89,7 +108,11 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
-
+const myArrowFunction = () =>{
+    var answer = "Today is a beautifull day.";
+    return answer;
+}
+console.log(myArrowFunction());
 /* Challenge #7
  * Create a function that accepts a string argument and returns it in all uppercase
  *
@@ -103,7 +126,10 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
-
+function stringToUpper(str){
+ return str.toUpperCase();
+}
+console.log(stringToUpper("Monday is my birthday"));
 /* Challenge #8
  * Create a function that accepts a number argument and returns double its value
  *
@@ -120,3 +146,10 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+function multiplyByTwo(number){
+ return 2 * number;
+}
+let num1 = multiplyByTwo(1);
+let num2 = multiplyByTwo(5);
+let num3 = multiplyByTwo(10);
+console.log(num1,", ",num2,", ",num3);
